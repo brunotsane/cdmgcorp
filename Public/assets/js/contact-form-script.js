@@ -31,7 +31,7 @@
             phone:phone_number,
             message: message,
             subject:msg_subject,
-        }
+        };
         fetch('/send', {
             method: 'POST',
             headers: {
