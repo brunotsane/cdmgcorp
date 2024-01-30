@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"  # Specifies the build command
+  publish = "dist"           # Specifies the publish directory where the built files are located
+
+[build.environment]
+  NODE_VERSION = "14"        # Sets the Node.js version to 14 for the build environment
+
+[context.production]
+  command = "npm run build:prod" 
