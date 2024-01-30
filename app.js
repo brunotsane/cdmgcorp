@@ -1,9 +1,11 @@
 import express, { json } from 'express';
 import 'dotenv/config';
+import cors from 'cors';
 import nodemailer from 'nodemailer';
 
 
 const app = express();
+app.use(cors());
 app.use(json());
 app.use(express.static('Public'));
 
