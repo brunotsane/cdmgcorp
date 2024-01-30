@@ -41,10 +41,7 @@
         })
         .then(response => response.json())
         .catch(error => {
-            console.error('Error:', error);
-            // Optionally display an error message in the chatbox
-            //displayMessage('Error getting response', false);
-            //hideTypingIndicator();
+            console.log(error);
         });
         fetch('/recieve', {
             method: 'POST',
