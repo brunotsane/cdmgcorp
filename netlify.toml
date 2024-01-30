@@ -1,9 +1,0 @@
-[build]
-  command = "npm run build"  # Specifies the build command
-  publish = "public"         # Specifies the publish directory where built files are located
-
-[context.production]
-  command = "npm run start"  # Specifies the start command for the production context
-
-[context.deploy-preview]
-  command = "npm run build"  #
